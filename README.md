@@ -14,7 +14,7 @@ The main differences between this and `spiffing` by @muan, are that this integra
 
 ### Install
 ```bash
-npm install postcss-spiffing
+npm install postcss-spiffing --save-dev
 ```
 
 ### Example
@@ -69,7 +69,7 @@ body {
 ### Use
 ```js
 var postcss = require("postcss");
-var spiffing = require("spiffing");
+var spiffing = require("postcss-spiffing");
 var fs = require("fs");
 
 var css = fs.readFileSync("random.css")
