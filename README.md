@@ -10,7 +10,7 @@ Shakespeare wouldn't have settled for using "color" rather than "colour" in CSS,
 
 Write CSS using proper British English anywhere with `postcss-spiffing`.
 
-The main differences between this and `spiffing` by @muan, are that this integrates with `postcss` and does not use regular expressions.
+The main differences between this and `spiffing` by [muan](https://github.com/muan), are that this integrates with `postcss` and does not use regular expressions.
 
 ### Install
 ```bash
