@@ -1,6 +1,6 @@
 {
   "name": "postcss-spiffing",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PostCSS plugin to use British English",
   "main": "index.js",
   "keywords": [
@@ -17,7 +17,7 @@
     "postcss": "^4.1.2"
   },
   "repository": {
-    "type":"git",
-    "url":"git@github.com:HashanP/postcss-spiffing.git"
+    "type": "git",
+    "url": "git@github.com:HashanP/postcss-spiffing.git"
   }
 }
