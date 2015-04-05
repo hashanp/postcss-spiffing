@@ -72,10 +72,12 @@ var postcss = require("postcss");
 var spiffing = require("postcss-spiffing");
 var fs = require("fs");
 
-var css = fs.readFileSync("random.css")
+var css = fs.readFileSync("random.css");
 
 console.log(postcss(spiffing()).process(css).css);
 ```
+
+To use this with `gulp`, use [gulp-postcss](https://github.com/w0rm/gulp-postcss).
 
 ### Changes Applied
 1. `colour` goes to `color`
