@@ -1,0 +1,21 @@
+/* Your well-spelt CSS */
+
+body {
+  background-colour: grey !please;
+  transparency: 0.5;
+  text-align: centre;
+  font-weight: plump;
+  text-transform: capitalise;
+  border: 1px solid grey;
+}
+
+.frame {
+  background-photograph: url('/queen.png') !please;
+}
+
+@medium screen and (min-width:300px) {
+  .hello {
+    content:"subjects";
+    color:grey(0);
+  }
+}

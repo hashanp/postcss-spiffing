@@ -1,0 +1,19 @@
+{
+  "name": "postcss-spiffing",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to use British English",
+  "main": "index.js",
+  "keywords": [
+    "spiffing",
+    "british english",
+    "spelling",
+    "css",
+    "postcss",
+    "postcssplugin"
+  ],
+  "author": "Hashan Punchihewa <hashan.punchihewa@gmail.com> (hashanp.divshot.io)",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^4.1.2"
+  }
+}
