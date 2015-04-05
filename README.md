@@ -6,7 +6,7 @@ Or, if thou wilt not, be but sworn my love,<br>
 And I’ll no longer be a Capulet.<br>
 \- William Shakespeare, *Romeo and Juliet*
 
-Shakespeare wouldn't have settled for using "color" rather than "colour" in CSS, and neither should you! He would recognised that in doing so, he would've comprised the whole integrity of his writing.
+Shakespeare wouldn't have settled for using "color" rather than "colour" in CSS, and neither should you! He would've recognised that in doing so, he would've comprised the whole integrity of his writing.
 
 Write CSS using proper British English anywhere with `postcss-spiffing`.
 
