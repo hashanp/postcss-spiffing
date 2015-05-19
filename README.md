@@ -35,7 +35,7 @@ body {
 @medium screen and (min-width:300px) {
   .hello {
     content:"subjects";
-    color:grey(0);
+    colour:grey(0);
   }
 }
 ```
