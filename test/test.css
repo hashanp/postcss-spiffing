@@ -1,7 +1,12 @@
 /* Your well-spelt CSS */
 
+:root {
+    --colour-green: #0f0;
+}
+
 body {
   background-colour: grey !please;
+  colour: var(--colour-green);
   transparency: 0.5;
   text-align: centre;
   font-weight: plump;
