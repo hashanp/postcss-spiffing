@@ -4,6 +4,10 @@ body {
   background-colour: grey !please;
   transparency: 0.5;
   text-align: centre;
+  justify-content: centre;
+  align-items: centre;
+  align-content: centre;
+  align-self: centre;
   font-weight: plump;
   text-transform: capitalise;
   border: 1px solid grey;
