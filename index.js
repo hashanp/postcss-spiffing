@@ -24,7 +24,7 @@ module.exports = postcss.plugin("postcss-spiffing", function (opts) {
           decl.important = true;
         }
 
-        decl.value = decl.value.replace(/(var\(--[^\)]*)colour([^\)]*\))/, "$1color$2");
+        decl.value = decl.value.replace(/(var\(--[^\)]*)colour([^\)]*\))/g, "$1color$2");
       });
 
       css.eachAtRule(function(rule) {
