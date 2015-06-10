@@ -23,7 +23,7 @@ npm install postcss-spiffing --save-dev
 
 body {
   background-colour: grey !please;
-  transparency: 0.5;
+  transparency: 0.3;
   text-align: centre;
   font-weight: plump;
   text-transform: capitalise;
@@ -47,7 +47,7 @@ will go to:
 ```css
 body {
   background-color: gray !important;
-  opacity: 0.5;
+  opacity: 0.7;
   text-align: center;
   font-weight: bold;
   text-transform: capitalize;
@@ -88,4 +88,4 @@ To use this with `gulp`, use [gulp-postcss](https://github.com/w0rm/gulp-postcss
 6. `centre` goes to `center`
 7. `grey` goes to `gray`
 8. `background-photograph` goes to `background-image`
-9. `transparency` goes to `opacity`
+9. `transparency` goes to `opacity` (since transparency is the opposite of opacity it becomes (1-n))

@@ -19,5 +19,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:HashanP/postcss-spiffing.git"
+  },
+  "devDependencies": {
+    "postcss": "^4.1.11"
   }
 }

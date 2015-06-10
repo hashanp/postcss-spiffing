@@ -11,6 +11,9 @@ module.exports = postcss.plugin("postcss-spiffing", function (opts) {
           decl.value = "bold";
         } else if(decl.prop === "transparency") {
           decl.prop = "opacity";
+          if(Number(decl.value) == decl.value && (parseFloat(decl.value) <= 1 && parseFloat(decl.value) >= 0)) {
+            decl.value = (1 - parseFloat(decl.value)).toFixed((Number(decl.value) + '').replace('.', '').length -1);
+          }
         } else if(decl.prop === "text-transform" && decl.value === "capitalise") {
           decl.value = "capitalize";
         } else if(decl.prop === "color" || decl.prop === "background-color" || decl.prop === "border" || decl.prop === "border-color") {
