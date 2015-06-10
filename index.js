@@ -5,7 +5,7 @@ module.exports = postcss.plugin("postcss-spiffing", function (opts) {
       css.eachDecl(function(decl) {
         decl.prop = decl.prop.replace(/colour/g, "color");
 
-        if(decl.prop === "text-align" && decl.value === "centre") {
+        if(["text-align", "justify-content", "align-items", "align-content", "align-self"].indexOf(decl.prop) !== -1 && decl.value === "centre") {
           decl.value = "center";
         } else if(decl.prop === "font-weight" && decl.value === "plump") {
           decl.value = "bold";
@@ -26,6 +26,8 @@ module.exports = postcss.plugin("postcss-spiffing", function (opts) {
           decl.value = decl.value.substring(0, decl.value.length-7).trim();
           decl.important = true;
         }
+
+        decl.value = decl.value.replace(/(var\(--[^\)]*)colour([^\)]*\))/g, "$1color$2");
       });
 
       css.eachAtRule(function(rule) {
