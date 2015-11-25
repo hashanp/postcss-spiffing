@@ -16,27 +16,29 @@ npm install postcss-spiffing --save-dev
 ```
 
 ### Example
+Basics:
 ```css
 /* Your well-spelt CSS */
 
 body {
-  background-colour: grey !please;
+  background-colour: grey;
   transparency: 0.3;
   text-align: centre;
-  font-weight: plump;
   text-transform: capitalise;
   border: 1px solid grey;
+}
+
+span {
+  font-weight: plump;
 }
 
 .frame {
   background-photograph: url('/queen.png') !please;
 }
 
-@medium screen and (min-width:300px) {
-  .hello {
-    content:"subjects";
-    colour:grey(0);
-  }
+.hello {
+	content:"subjects";
+	colour:grey(0);
 }
 ```
 
@@ -47,20 +49,21 @@ body {
   background-color: gray !important;
   opacity: 0.7;
   text-align: center;
-  font-weight: bold;
   text-transform: capitalize;
   border: 1px solid gray;
+}
+
+span {
+  font-weight: bold;
 }
 
 .frame {
   background-image: url('/queen.png') !important;
 }
 
-@media screen and (min-width:300px) {
-  .hello {
-    content:"subjects";
-    color:gray(0);
-  }
+.hello {
+	content:"subjects";
+	color:gray(0);
 }
 ```
 
@@ -79,11 +82,10 @@ To use this with `gulp`, use [gulp-postcss](https://github.com/w0rm/gulp-postcss
 
 ### Changes Applied
 1. `colour` goes to `color`
-2. `@medium` (i.e. the singular of `media`) goes to `@media`
-3. `plump` goes to `bold`
-4. `capitalise` goes to `capitalize`
-5. `!please` goes to `!important`
-6. `centre` goes to `center`
-7. `grey` goes to `gray`
-8. `background-photograph` goes to `background-image`
-9. `transparency` goes to `opacity` (since transparency is the opposite of opacity it becomes (1-n))
+2. `plump` goes to `bold`
+3. `capitalise` goes to `capitalize`
+4. `!please` goes to `!important`
+5. `centre` goes to `center`
+6. `grey` goes to `gray`
+7. `background-photograph` goes to `background-image`
+8. `transparency` goes to `opacity` (since transparency is the opposite of opacity it becomes (1-n))

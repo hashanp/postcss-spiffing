@@ -2,7 +2,7 @@ var postcss = require("postcss");
 
 module.exports = postcss.plugin("postcss-spiffing", function (opts) {
     return function(css) {
-      css.eachDecl(function(decl) {
+      css.walkDecls(function(decl) {
         decl.prop = decl.prop.replace(/colour/g, "color");
 
         if(["text-align", "justify-content", "align-items", "align-content", "align-self"].indexOf(decl.prop) !== -1 && decl.value === "centre") {
@@ -30,7 +30,7 @@ module.exports = postcss.plugin("postcss-spiffing", function (opts) {
         decl.value = decl.value.replace(/(var\(--[^\)]*)colour([^\)]*\))/g, "$1color$2");
       });
 
-      css.eachAtRule(function(rule) {
+      css.walkAtRules(function(rule) {
         if(rule.name === "medium") {
           rule.name = "media";
         }

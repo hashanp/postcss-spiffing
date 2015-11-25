@@ -21,6 +21,6 @@
     "url": "git@github.com:HashanP/postcss-spiffing.git"
   },
   "devDependencies": {
-    "postcss": "^4.1.11"
+    "postcss": "^5.0.12"
   }
 }
