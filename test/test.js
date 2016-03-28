@@ -1,12 +1,16 @@
-var postcss = require("postcss");
-var fs = require("fs");
-var plugin = require("../");
+var postcss = require("postcss")
+	expect = require("expect.js"),
+	fs = require("fs"),
+	path = require("path"),
+	plugin = require("../");
 
 
-fs.readFile("./test.css", function(err, css) {
-  postcss([ plugin() ]).process(css).then(function(result) {
-        console.log(result.css);
-    }).catch(function(e) {
-      console.log(e);
-    });
+describe("Main test", function() {
+	it("should translate correctly", function() {
+		var source = fs.readFileSync(path.join(__dirname, "source.css"), "utf-8"),
+			expected = fs.readFileSync(path.join(__dirname, "expected.css"), "utf-8"),
+			translated = postcss([ plugin() ]).process(source).css;
+
+		expect(translated).to.eql(expected);
+	});
 });
