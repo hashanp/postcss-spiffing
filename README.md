@@ -33,12 +33,12 @@ span {
 }
 
 .frame {
-  background-photograph: url('/queen.png') !please;
+  background-photograph: url("/queen.png") !please;
 }
 
 .hello {
-	content:"subjects";
-	colour:grey(0);
+	content: "subjects";
+	colour: grey;
 }
 ```
 
@@ -58,12 +58,12 @@ span {
 }
 
 .frame {
-  background-image: url('/queen.png') !important;
+  background-image: url("/queen.png") !important;
 }
 
 .hello {
-	content:"subjects";
-	color:gray(0);
+	content: "subjects";
+	color: gray;
 }
 ```
 
@@ -87,5 +87,6 @@ To use this with `gulp`, use [gulp-postcss](https://github.com/w0rm/gulp-postcss
 4. `!please` goes to `!important`
 5. `centre` goes to `center`
 6. `grey` goes to `gray`
-7. `background-photograph` goes to `background-image`
+7. `background-photograph` goes to `background-image` (`list-style-photograph` is supported too)
 8. `transparency` goes to `opacity` (since transparency is the opposite of opacity it becomes (1-n))
+9. `storey` goes to `z-index` (`ground` equals 1 and so on)

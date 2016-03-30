@@ -1,6 +1,6 @@
 {
   "name": "postcss-spiffing",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "PostCSS plugin to use British English",
   "main": "index.js",
   "keywords": [
@@ -14,13 +14,18 @@
   "author": "Hashan Punchihewa <hashan.punchihewa@gmail.com> (hashanp.divshot.io)",
   "license": "MIT",
   "dependencies": {
-    "postcss": "^4.1.2"
+    "postcss": "^5.0.19"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:HashanP/postcss-spiffing.git"
   },
   "devDependencies": {
-    "postcss": "^5.0.12"
+    "expect.js": "^0.3.1",
+    "mocha": "^2.4.5",
+    "postcss": "^5.0.19"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
