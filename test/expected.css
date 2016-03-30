@@ -19,17 +19,17 @@ body {
 }
 
 .frame {
-  background-image: url('/queen.png') !important;
+  background-image: url("/queen.png") !important;
   z-index: 2;
 }
 
 .background-test {
-  background: gray url('/grey.png') top center; 
+  background: gray url("/grey.png") top center; 
   z-index: -9;
 }
 
 li {
-  list-style-image: url('photograph.jpg');
+  list-style-image: url("photograph.jpg");
 }
 
 @media screen and (min-width: 300px) {

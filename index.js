@@ -1,10 +1,9 @@
 var postcss = require("postcss");
 
 module.exports = postcss.plugin("postcss-spiffing", function(opts) {
-    return function(css) {
-      css.walkDecls(function(decl) {
-        decl.prop = decl.prop.replace(/colour/g, "color").replace(/photograph/g, "image");
-
+  return function(css) {
+		css.walkDecls(function(decl) {
+      decl.prop = decl.prop.replace(/colour/g, "color").replace(/photograph/g, "image");
         if (decl.prop === "font-weight" && decl.value === "plump") {
           decl.value = "bold";
         } else if (decl.prop === "transparency") {
@@ -18,7 +17,7 @@ module.exports = postcss.plugin("postcss-spiffing", function(opts) {
         } else if (decl.prop === "storey") {
           decl.prop = "z-index";
 
-          if (decl.value == "ground") {
+          if (decl.value === "ground") {
             decl.value = "1";
           } else {
             decl.value = Number(decl.value) + 1 + "";
@@ -30,19 +29,18 @@ module.exports = postcss.plugin("postcss-spiffing", function(opts) {
           decl.important = true;
         }
 
-
-        if (decl.prop != "content") {
+        if (decl.prop !== "content") {
           decl.value = decl.value.split(" ").map(function(i) {
-              if (i == "centre") {
-                return "center";
-              }
+            if (i === "centre") {
+              return "center";
+            }
 
-              if (i == "grey") {
-                return "gray";
-              }
+            if (i === "grey") {
+             return "gray";
+            }
 
-              return i;
-            }).join(" ");
+            return i;
+          }).join(" ");
         }
 
         decl.value = decl.value.replace(/(var\(--[^\)]*)colour([^\)]*\))/g, "$1color$2");

@@ -33,7 +33,7 @@ span {
 }
 
 .frame {
-  background-photograph: url('/queen.png') !please;
+  background-photograph: url("/queen.png") !please;
 }
 
 .hello {
@@ -58,7 +58,7 @@ span {
 }
 
 .frame {
-  background-image: url('/queen.png') !important;
+  background-image: url("/queen.png") !important;
 }
 
 .hello {
