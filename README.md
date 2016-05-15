@@ -46,7 +46,7 @@ will go to:
 
 ```css
 body {
-  background-color: gray !important;
+  background-color: gray;
   opacity: 0.7;
   text-align: center;
   text-transform: capitalize;
