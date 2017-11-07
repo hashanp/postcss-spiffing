@@ -15,8 +15,7 @@ The main differences between this and `spiffing` by [muan](https://github.com/mu
 npm install postcss-spiffing --save-dev
 ```
 
-### Example
-Basics:
+### Example Basics
 ```css
 /* Your well-spelt CSS */
 
