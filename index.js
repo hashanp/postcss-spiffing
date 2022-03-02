@@ -14,11 +14,11 @@ module.exports = postcss.plugin("postcss-spiffing", function(opts) {
           }
         } else if (decl.prop === "text-transform" && decl.value === "capitalise") {
           decl.value = "capitalize";
-        } else if (decl.prop === "storey") {
+        } else if (decl.prop === "floor") {
           decl.prop = "z-index";
 
           if (decl.value === "ground") {
-            decl.value = "1";
+            decl.value = "0";
           } else {
             decl.value = Number(decl.value) + 1 + "";
           }
