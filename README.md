@@ -88,4 +88,4 @@ To use this with `gulp`, use [gulp-postcss](https://github.com/w0rm/gulp-postcss
 6. `grey` goes to `gray`
 7. `background-photograph` goes to `background-image` (`list-style-photograph` is supported too)
 8. `transparency` goes to `opacity` (since transparency is the opposite of opacity it becomes (1-n))
-9. `storey` goes to `z-index` (`ground` equals 1 and so on)
+9. `storey` goes to `z-index` (plus `1`, since ground floor in proper English is floor 1 in American. You can also use `ground` instead of `1`)
